@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <span class="label label-default">Countries In Continents</span>
+	</div>
+	<div class="panel-body">
+        <div id="cList" ng-controller="countriesInContinentsController">
+            <div class="row">
+                <input id="search" class="col-md-offset-10" type="text" class="form-control" ng-model="nameFilter" placeholder="Search..."/>
+            </div>
+            <div class="page-header">
+                <h1>List of Countries in {{countriesRegion}}</h1>
+            </div>
+            <table class="table">
+                <thead>
+                  <tr><th>Flags</th><th>Names</th><th>Capitals</th><th>Area(km<sup>2</sup>)</th><th>Population</th></tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="country in countriesByContinentsList | filter: searchFilter">				
+                    <td> <img  ng-src="./assets/img/flag/16/{{country.alpha2Code}}.png" /></td>
+                    <td><a href="#/country/{{country.alpha2Code}}">{{country.name}}</a></td>
+                    <td>{{country.capital}}</td>
+                    <td>{{country.area}}</td>
+                    <td>{{country.population}}</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

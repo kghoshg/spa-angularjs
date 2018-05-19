@@ -1,0 +1,47 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+body{
+	background-color:#D5D5D5;
+}
+
+input#search{
+  border-radius: 3px;
+  padding: 3px;
+  border: 1px solid #ffffff;
+}
+
+div.panel{
+    background-color: #E4E3E3;
+}
+.cc-codes{
+	text-align: center;
+}
+
+#footy{
+        padding-top: 20px;
+}
+
+/*  google map customization*/
+#map {
+    height:420px;	
+}
+#mm{
+	margin-bottom:0px;
+}

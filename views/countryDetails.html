@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <span class="label label-default">Country Details</span>
+	</div>
+	<div class="panel-body">
+        <div id="cList" ng-controller="countryDetailsController">
+            <div class="page-header">
+                <h1>Country Details</h1>
+            </div>
+            <table class="table">
+                <thead>
+                  <tr><th>Capitals</th><th>Area(km)</th><th>Population</th></tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="country in countryDetails">                    						
+                    <td>{{country.capital}}</td>
+                    <td>{{country.area}}</td>
+                    <td>{{country.population}}</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
